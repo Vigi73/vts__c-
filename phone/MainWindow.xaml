@@ -32,6 +32,13 @@
 
 
 
+        <Style TargetType="{x:Type DataGrid}">
+            <Setter Property="Background" Value="#FFF" />
+            <Setter Property="AlternationCount" Value="2" />
+        </Style>
+
+
+
     </Window.Resources>
 
 
@@ -81,7 +88,7 @@
         </Button>
         <TextBox x:Name="edtSearch" Padding="10" HorizontalAlignment="Left" Margin="11,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="883" Height="66" Foreground="#FFF9F8F8" Background="{x:Null}" FontSize="28" ToolTip="Ввод текста для поиска" KeyUp="edtSearch_KeyUp" Cursor="Hand" CaretBrush="#FFF3EFEF"/>
 
-        <DataGrid x:Name="grid" IsReadOnly="True" Margin="14,166,14,47" FontWeight="Normal" FontSize="11" Background="{x:Null}" BorderBrush="#FF0D0D0E" Cursor="Hand" >
+        <DataGrid x:Name="grid"  AlternationCount="2" IsReadOnly="True"  AutoGenerateColumns="False" Margin="14,166,14,29" FontWeight="Normal" FontSize="11" Background="{x:Null}" BorderBrush="#FF0D0D0E" Cursor="Hand" >
 
             <!--Цвет выделения строки-->
             <DataGrid.Resources>
@@ -131,34 +138,21 @@
 
             <DataGrid.RowStyle>
                 <Style TargetType="{x:Type DataGridRow}">
-                    <!--
+
                     <Setter Property="MinWidth" Value="0" />
                     <Setter Property="FontSize" Value="12" />
-                    <Setter Property="MinHeight" Value="27" />
+                    <Setter Property="MinHeight" Value="19" />
                     <Setter Property="SnapsToDevicePixels" Value="True" />
                     <Setter Property="HorizontalContentAlignment" Value="Center" />
-                    <Setter Property="Background">
-                        <Setter.Value>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="Black" Offset="0"/>
-                                <GradientStop Color="#FFD1CDA9" Offset="0.057"/>
-                            </LinearGradientBrush>
-                        </Setter.Value>
-                    </Setter>
-                    -->
+                    <Setter Property="Background" Value="#FFF3F3C9"/>
+
 
                     <Style.Triggers>
-                        <Trigger Property="AlternationIndex" Value="0">
-                            <Setter Property="Background" Value="#FFA69C31" />
+                        <!--first alteraniting colour-->
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="#FFE6D276"></Setter>
                         </Trigger>
-                        <Trigger Property="AlternationIndex" Value="1">
-                            <Setter Property="Background" Value="#FFE4E084" />
-                        </Trigger>
-                        <DataTrigger Binding="{Binding Path=Selectable}" Value="False">
-                            <DataTrigger.Setters>
-                                <Setter Property="Background" Value="LightGray" />
-                            </DataTrigger.Setters>
-                        </DataTrigger>
+
                     </Style.Triggers>
 
 
@@ -171,7 +165,23 @@
         </DataGrid>
 
 
-        <Label x:Name="txt" Content="Label" HorizontalAlignment="Left" Height="32" Margin="902,753,0,0" VerticalAlignment="Top" Width="83" BorderThickness="1,1,1,1" FontSize="20" FontStyle="Normal" FontStretch="Normal" FlowDirection="RightToLeft" FontWeight="Black" FontFamily="Tw Cen MT Condensed"/>
+        <Label x:Name="txt" Content="Label" HorizontalAlignment="Left" Height="30" Margin="902,766,0,0" VerticalAlignment="Top" Width="83" BorderThickness="1,1,1,1" FontSize="20" FontStyle="Normal" FontStretch="Normal" FlowDirection="RightToLeft" FontWeight="Black" FontFamily="Tw Cen MT Condensed">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="Label.Loaded">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard TargetProperty="Opacity">
+                                        <DoubleAnimation  Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:5" />
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
 
     </Grid>
 </Window>

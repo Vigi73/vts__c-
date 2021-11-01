@@ -97,7 +97,7 @@ namespace phone
             {
                 var vID = i; //row.Field<long>("id");
                 var vMOBAIL = String.Join(" ", re.Matches(row.Field<string>("Fio")));
-                var vFIO = textInfo.ToTitleCase(row.Field<string>("Fio").Split("с.т.")[0].ToLower());
+                var vFIO = textInfo.ToTitleCase(row.Field<string>("Fio").ToUpper().Split("С.")[0].ToLower());
                 var vNAME = row.Field<string>("Name");
                 var vVTS = row.Field<string>("Vts");
                 var vCITY = row.Field<string>("City");
