@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>phone_19675.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="bookcontacts_7069.png" />
+      <None Remove="search.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Data.SQLite" Version="1.0.115" />
+      <PackageReference Include="System.Data.SQLite.Core" Version="1.0.115" />
+      <PackageReference Include="System.Data.SQLite.EF6" Version="1.0.115" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="bookcontacts_7069.png" />
+      <Resource Include="search.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="data.db">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
