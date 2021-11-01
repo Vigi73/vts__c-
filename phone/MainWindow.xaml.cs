@@ -86,7 +86,7 @@ namespace phone
             DataTable data = new DataTable();
             SQLiteDataAdapter adapter = new SQLiteDataAdapter(patt, connection);
             adapter.Fill(data);
-            txt.Content =$"{data.Rows.Count}";
+            txt.Content =$"Найдено записей: {data.Rows.Count}";
             var pattern = @"\d-\d{3}-\d{3}-\d{2}-\d{2}";
             Regex re = new Regex(pattern);
 
