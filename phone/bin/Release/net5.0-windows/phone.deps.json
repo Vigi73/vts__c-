@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "phone/1.0.0": {
+      "phone/2.0.0": {
         "dependencies": {
           "System.Data.SQLite": "1.0.115",
           "System.Data.SQLite.Core": "1.0.115",
@@ -197,7 +197,7 @@
     }
   },
   "libraries": {
-    "phone/1.0.0": {
+    "phone/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
