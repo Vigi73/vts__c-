@@ -72,7 +72,7 @@ namespace phone
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-            searchData($"SELECT * FROM List WHERE Fio LIKE '%{edtSearch.Text.ToUpper()}%' OR Name LIKE '%{edtSearch.Text.ToUpper()}%' OR Vts LIKE '%{edtSearch.Text.ToUpper()}%'");
+            searchData($"SELECT * FROM List WHERE Fio LIKE '%{edtSearch.Text.ToUpper()}%' OR Name LIKE '%{edtSearch.Text.ToUpper()}%'  OR Vts LIKE '%{edtSearch.Text.ToUpper()}%'");
 
         }
 

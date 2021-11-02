@@ -31,7 +31,6 @@
         </LinearGradientBrush>
 
 
-
         <Style TargetType="{x:Type DataGrid}">
             <Setter Property="Background" Value="#FFF" />
             <Setter Property="AlternationCount" Value="2" />
@@ -48,38 +47,9 @@
 
         <Style x:Key="TextStyleMedium" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource TextBase}">
         </Style>
-
-        <Style x:Key="HeaderBar" TargetType="{x:Type Label}" BasedOn="{StaticResource TextBase}">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Label}">
-                        <Grid>
-                            <Rectangle x:Name="TitleBox" Fill="#FFECDC54">
-                                <Rectangle.Stroke>
-                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                        <LinearGradientBrush.RelativeTransform>
-                                            <TransformGroup>
-                                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
-                                                <RotateTransform Angle="140" CenterY="0.5" CenterX="0.5"/>
-                                                <TranslateTransform/>
-                                            </TransformGroup>
-                                        </LinearGradientBrush.RelativeTransform>
-                                        <GradientStop Color="#FFA09F9F" Offset="0.4"/>
-                                        <GradientStop Color="White" Offset="0.5"/>
-                                    </LinearGradientBrush>
-                                </Rectangle.Stroke>
-                            </Rectangle>
-                            <ContentPresenter HorizontalAlignment="Left" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                        </Grid>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
+       
 
     </Window.Resources>
-
-
 
     <Grid Height="800" VerticalAlignment="Center" Cursor="Hand" 
           FocusManager.FocusedElement="{Binding ElementName=edtSearch}">
@@ -199,9 +169,6 @@
                 </Style>
             </DataGrid.RowStyle>
 
-
-
-
         </DataGrid>
 
 
@@ -209,9 +176,6 @@
                 Margin="687,769,0,0" VerticalAlignment="Top" Width="300" FontFamily="Arial"
                 BorderThickness="1,1,1,1" FontWeight="SemiBold" FontSize="13" FontStyle="Normal" FontStretch="Normal" FlowDirection="RightToLeft" 
                 SnapsToDevicePixels="True">
-
-
-
 
         </Label>
 

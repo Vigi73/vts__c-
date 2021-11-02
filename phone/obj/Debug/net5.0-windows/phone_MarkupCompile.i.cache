@@ -1,5 +1,5 @@
 ﻿phone
-1.0.0.0
+2.0.0.0
 
 winexe
 C#
@@ -16,5 +16,5 @@ E:\projects\c#\phone\phone\App.xaml
 198127985221
 MainWindow.xaml;
 
-True
+False
 
