@@ -49,27 +49,7 @@
         </Style>
 
 
-        <Style x:Key="WindowStyle" TargetType="Window">
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="Loaded">
-                    <!--Триггер при открытие окна-->
-                    <EventTrigger.Actions>
-                        <BeginStoryboard>
-                            <Storyboard>
-                                <DoubleAnimation
-                                Storyboard.TargetProperty="Opacity"
-                                From="0.4"
-                                To="1"
-                                Duration="0:0:0.35" />
-                                <!--Duration менять время анимации, From (от значения) To (до значения)-->
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger.Actions>
-                </EventTrigger>
-            </Style.Triggers>
-        </Style>
-
-
+        
 
     </Window.Resources>
 
@@ -99,7 +79,7 @@
             </Button.Background>
         </Button>
         <Image x:Name="logo" HorizontalAlignment="Left" Height="55" Margin="7,7,0,0" VerticalAlignment="Top" Width="67" Source="/bookcontacts_7069.png"/>
-        <Label Content="Справочник ВТС УФК по Алтайскому краю 2.0" HorizontalAlignment="Left" Margin="68,8,0,0" VerticalAlignment="Top" Width="392" FontFamily="Bahnschrift Condensed" FontStyle="Normal" FontWeight="Medium" FontSize="22" Height="34">
+        <Label Content="Справочник ВТС УФК по Алтайскому краю 2.0" HorizontalAlignment="Left" Margin="68,8,0,0" VerticalAlignment="Top" Width="649" FontFamily="Bahnschrift Condensed" FontStyle="Normal" FontWeight="Medium" FontSize="22" Height="34">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="1"/>
@@ -135,16 +115,16 @@
                         </DataTrigger>
                     </Style.Triggers>
                 </Style>
-
-
-
             </DataGrid.Resources>
+
+
+
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№" Width="50" Binding="{Binding ID}"/>
                 <DataGridTextColumn Header="СТРУКТУРНОЕ ПОДРАЗДЕЛЕНИЕ" Width="270" Binding="{Binding STRUCT}" />
                 <DataGridTextColumn Header="ФИО" Width="250" Binding="{Binding FIO}"/>
-                <DataGridTextColumn Header="ВТС" MaxWidth="150" Binding="{Binding VTS}" />
+                <DataGridTextColumn Header="ВТС" MaxWidth="150" Binding="{Binding VTS}"/>
                 <DataGridTextColumn Header="МОБИЛЬНЫЙ" MaxWidth="250" Binding="{Binding MOBAIL}"/>
                 <DataGridTextColumn Header="ГОРОДСКОЙ" Width="*" Binding="{Binding CITY}"/>
             </DataGrid.Columns>
@@ -186,10 +166,9 @@
                         </Trigger>
 
                     </Style.Triggers>
-
-
                 </Style>
             </DataGrid.RowStyle>
+                                    
 
         </DataGrid>
 

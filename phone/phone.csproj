@@ -10,6 +10,7 @@
         <Product>Справочник ВТС</Product>
         <Copyright>Егиоя Е.Н.</Copyright>
         <RepositoryUrl>https://github.com/Vigi73/vts__c-</RepositoryUrl>
+        <Platforms>AnyCPU;x86</Platforms>
     </PropertyGroup>
 
     <ItemGroup>
