@@ -27,6 +27,7 @@
     <ItemGroup>
       <Resource Include="bookcontacts_7069.png" />
       <Resource Include="search.png" />
+      <Resource Include="./img/i.jpg" />
     </ItemGroup>
 
     <ItemGroup>

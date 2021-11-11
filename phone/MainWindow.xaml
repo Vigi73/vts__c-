@@ -14,7 +14,7 @@
 
     <Window.Resources>
 
-
+        
         <LinearGradientBrush x:Key="HeaderBrush" StartPoint="0.5,0" EndPoint="0.5,1">
             <GradientStop Color="#FF171409" Offset="0"/>
             <GradientStop Color="#FF6A5E12" Offset="1"/>
@@ -179,7 +179,16 @@
                 SnapsToDevicePixels="True">
 
         </Label>
-        <Label FontFamily="Console" Content="© Vigi-Soft 2021&#xD;&#xA;" FontSize="11" HorizontalAlignment="Left" Margin="466,771,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Label FontFamily="Console" Content="© Vigi-Soft 2021&#xD;&#xA;" FontSize="11" HorizontalAlignment="Left" Margin="466,771,0,0" 
+               VerticalAlignment="Top" HorizontalContentAlignment="Center" ToolTipService.ShowDuration="5000" Cursor="Help">
+            <Label.ToolTip>
+                <StackPanel>                    
+                    <Image Source="./img/i.jpg"  Width="170" VerticalAlignment="Center"></Image>
+                    <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Разработка и дизайн:</TextBlock>
+                    <TextBlock HorizontalAlignment="Center">Егиоя Е.Н.</TextBlock>
+                </StackPanel>
+            </Label.ToolTip> 
+        </Label>
 
     </Grid>
 </Window>
