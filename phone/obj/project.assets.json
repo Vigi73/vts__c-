@@ -1159,19 +1159,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vigi\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "2.0.0",
     "restore": {
-      "projectUniqueName": "E:\\projects\\c#\\phone\\phone\\phone.csproj",
+      "projectUniqueName": "D:\\projects\\c#\\vts__c-\\phone\\phone.csproj",
       "projectName": "phone",
-      "projectPath": "E:\\projects\\c#\\phone\\phone\\phone.csproj",
-      "packagesPath": "C:\\Users\\Vigi\\.nuget\\packages\\",
-      "outputPath": "E:\\projects\\c#\\phone\\phone\\obj\\",
+      "projectPath": "D:\\projects\\c#\\vts__c-\\phone\\phone.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\c#\\vts__c-\\phone\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vigi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1228,7 +1228,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

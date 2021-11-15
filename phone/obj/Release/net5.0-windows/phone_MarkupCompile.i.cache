@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\projects\c#\phone\phone\obj\Release\net5.0-windows\
+D:\projects\c#\vts__c-\phone\obj\Release\net5.0-windows\
 phone
 none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
-E:\projects\c#\phone\phone\App.xaml
+D:\projects\c#\vts__c-\phone\App.xaml
 11407045341
 
 5336921774
-198127985221
+198511880883
 MainWindow.xaml;
 
-False
+True
 

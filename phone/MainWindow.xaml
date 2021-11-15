@@ -69,6 +69,12 @@
                     <GradientStop Color="#FFE2C359" Offset="0"/>
                 </LinearGradientBrush>
             </Button.Background>
+
+
+        
+                        
+            
+            
         </Button>
         <Button x:Name="turn" Content="_" HorizontalAlignment="Left" Margin="918,7,0,0" VerticalAlignment="Top" Height="30" Width="35" Click="turn_Click" ToolTip="Свернуть в трей" Foreground="#FFFFFBFB" FontWeight="Black" >
             <Button.Background>
@@ -182,10 +188,13 @@
         <Label FontFamily="Console" Content="© Vigi-Soft 2021&#xD;&#xA;" FontSize="11" HorizontalAlignment="Left" Margin="466,771,0,0" 
                VerticalAlignment="Top" HorizontalContentAlignment="Center" ToolTipService.ShowDuration="5000" Cursor="Help">
             <Label.ToolTip>
-                <StackPanel>                    
-                    <Image Source="./img/i.jpg"  Width="170" VerticalAlignment="Center"></Image>
+                <StackPanel>
+                    
                     <TextBlock FontWeight="Bold" HorizontalAlignment="Center">Разработка и дизайн:</TextBlock>
-                    <TextBlock HorizontalAlignment="Center">Егиоя Е.Н.</TextBlock>
+                    <Image Source="./img/i.jpg"  Width="220" VerticalAlignment="Center"></Image>
+                    
+                    <TextBlock FontWeight="SemiBold" HorizontalAlignment="Center">Ведущий специалист-экперт Отдела №19</TextBlock>
+                    <TextBlock HorizontalAlignment="Center">Егиоя Евгений Николаевич</TextBlock>
                 </StackPanel>
             </Label.ToolTip> 
         </Label>

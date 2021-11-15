@@ -6,10 +6,11 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\Vigi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Vigi\\.nuget\\packages"
+      "C:\\Users\\User\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\User\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Reflection.Metadata.MetadataUpdater.IsSupported": false,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
